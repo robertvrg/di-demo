@@ -1,5 +1,6 @@
 package guru.framework.didemo;
 
+import guru.framework.didemo.controllers.ConstructorInjectedController;
 import guru.framework.didemo.controllers.GetterInjectedController;
 import guru.framework.didemo.controllers.MyController;
 import guru.framework.didemo.controllers.PropertyInjectedController;
@@ -18,5 +19,6 @@ public class DiDemoApplication {
 
         System.out.println(ctx.getBean(PropertyInjectedController.class).sayHello());
         System.out.println(ctx.getBean(GetterInjectedController.class).sayHello());
+        System.out.println(ctx.getBean(ConstructorInjectedController.class).sayHello());
     }
 }
