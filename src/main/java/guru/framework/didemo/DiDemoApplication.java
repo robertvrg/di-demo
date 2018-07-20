@@ -1,5 +1,6 @@
 package guru.framework.didemo;
 
+import guru.framework.didemo.controllers.GetterInjectedController;
 import guru.framework.didemo.controllers.MyController;
 import guru.framework.didemo.controllers.PropertyInjectedController;
 import org.springframework.boot.SpringApplication;
@@ -16,5 +17,6 @@ public class DiDemoApplication {
         controller.hello();
 
         System.out.println(ctx.getBean(PropertyInjectedController.class).sayHello());
+        System.out.println(ctx.getBean(GetterInjectedController.class).sayHello());
     }
 }
